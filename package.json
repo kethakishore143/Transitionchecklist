@@ -1,5 +1,5 @@
 {
-  "homepage": "",
+  "start": "nodemon app.js",
   "name": "transitionchecklist",
   "version": "1.0.0",
   "main": "index.js",
