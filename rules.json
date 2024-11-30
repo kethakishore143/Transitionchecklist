@@ -1,0 +1,22 @@
+[
+    {
+        "id": "valuationFeePaid",
+        "description": "Valuation Fee Paid",
+        "condition": "data.isValuationFeePaid === true"
+    },
+    {
+        "id": "ukResident",
+        "description": "UK Resident",
+        "condition": "data.isUkResident === true"
+    },
+    {
+        "id": "riskRatingMedium",
+        "description": "Risk Rating Medium",
+        "condition": "data.riskRating === 'Medium'"
+    },
+    {
+        "id": "ltvBelow60",
+        "description": "LTV Below 60%",
+        "condition": "(parseFloat(data.mortgage.loanRequired.replace(/[^\\d.-]/g, '')) / parseFloat(data.mortgage.purchasePrice.replace(/[^\\d.-]/g, ''))) * 100 < 60"
+    }
+]
